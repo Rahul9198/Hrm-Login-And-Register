@@ -1,0 +1,82 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                      style="width: 185px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">We are The HRMS Team</h4>
+                  </div>
+  
+                  <form (ngSubmit)="onSubmit()">
+                    <p>Please login to your account</p>
+  
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form2Example11" class="form-control"
+                        placeholder=" email address" [(ngModel)]="email" name="email" />
+                      <label class="form-label" for="form2Example11">Email Id</label>
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form2Example22" class="form-control" [(ngModel)]="password" name="password"/>
+                      <label class="form-label" for="form2Example22">Password</label>
+                    </div>
+  
+                    <div class="col-md-6 offset-md-3">
+                
+                        
+                    <!-- <div class="text-center pt-1 mb-5 pb-1"> -->
+                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
+                        in</button>
+                        
+                    </div>
+                   
+                  </form>
+                  <div *ngIf="message" class="alert alert-danger">{{ message }}</div>
+  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-4">Welcome to Our HRMS Login Page</h4>
+                  <p class="small mb-0">Welcome back! Please log in to access your HRMS account. Our secure login system ensures that your information remains safe and confidential.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <img src="../../assets/img/log.jpg" alt="Logo" class="logo">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" [(ngModel)]="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" [(ngModel)]="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <div *ngIf="message" class="alert alert-danger">{{ message }}</div>
+</div> -->

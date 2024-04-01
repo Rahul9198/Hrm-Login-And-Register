@@ -1,0 +1,176 @@
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: (linear-gradient(to right,rgb(2,2,51),rgb(25, 157, 148)));
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+  
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+          margin-top: -100px;
+          background:pink;
+          backdrop-filter: blur(30px);
+          ">
+      <div class="card-body py-5 px-md-5">
+  
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="title fw-bold mb-5" style="color: green;">Sign up now</h2>
+            <form (ngSubmit)="onSubmit()" class="form">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <span class="input-span">
+                    <input type="text" id="form3Example1" placeholder="Enter First name" class="form-control" [(ngModel)]="firstname" name="firstname" />
+                    <label class="label form-label" for="form3Example1" >First name</label></span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <span class="input-span">
+                    <input type="text" id="form3Example2" placeholder=" Enter Last name" class="form-control" [(ngModel)]="lastname" name="lastname" />
+                    <label class="label form-label" for="form3Example2">Last name</label></span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <span class="input-span">
+                <input type="email" id="form3Example3" placeholder="Enter Your Email " class="form-control" [(ngModel)]="email" name="email" />
+                <label class="label form-label" for="form3Example3">Email address</label></span>
+              </div>
+  
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <span class="input-span">
+                <input type="password" id="form3Example4" placeholder="Enter Your password" class="form-control" [(ngModel)]="password" name="password" />
+                <label class="label form-label" for="form3Example4">Password</label></span>
+              </div>
+  
+
+              <div class="form-outline mb-4">
+                <span class="input-span">
+                <input type="text" id="form3Example4" placeholder="Enter Your Department" class="form-control" [(ngModel)]="department" name="department"/>
+                <label class="label form-label" for="form3Example4">Department</label></span>
+              </div>
+
+              <div class="form-outline mb-4">
+                <span class="input-span">
+                <input type="text" id="form3Example4" placeholder="Enter Position" class="form-control" [(ngModel)]="position" name="position"/>
+                <label class="label form-label" for="form3Example4">Position</label></span>
+              </div>
+  
+              <div class="form-outline mb-4">
+                <span class="input-span">
+                <input type="password" id="form3Example4" placeholder="Enter phonenumber" class="form-control" [(ngModel)]="phonenumber" name="phonenumber"/>
+                <label class="label form-label" for="form3Example4">PhoneNumber</label></span>
+              </div>
+
+
+
+              
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                <label class="form-check-label" for="form2Example33">
+                  Subscribe to our newsletter
+                </label>
+              </div>
+  
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Register
+              </button>
+  
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+  
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+  
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+  
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              
+            </form>
+            <div *ngIf="message" class="alert alert-danger">{{ message }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <img src="../../assets/img/reg.png" alt="Logo" class="logo">
+    <h2>Employee Registration</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" [(ngModel)]="username" name="username">
+        </div>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" [(ngModel)]="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" [(ngModel)]="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <label>Department</label>
+            <input type="text" class="form-control" [(ngModel)]="department" name="department">
+        </div>
+
+
+        <div class="form-group">
+            <label>Position</label>
+            <input type="text" class="form-control" [(ngModel)]="position" name="position">
+        </div>
+
+
+        <div class="form-group">
+            <label>Phonenumber</label>
+            <input type="password" class="form-control" [(ngModel)]="phonenumber" name="phonenumber">
+        </div> 
+
+
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <div *ngIf="message" class="alert alert-danger">{{ message }}</div>
+</div>  -->
